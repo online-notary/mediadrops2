@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>The Software Launch</title>
+    <!--// Fonts \\-->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <!--\\ Fonts //-->
+    <!--// Bootstrap \\-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
+    <!--\\ Bootstrap //-->
+    <!--// Stylesheet \\-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--\\ Stylesheet //-->
+</head>
+
+<body>
+    <!--// Header \\-->
+    <header class="fixed-top error-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inner-container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                        <a class="navbar-brand" href="index.html">
+                            <!--// Logo \\-->
+                            <!-- Light Logo -->
+                            <img src="assets/img/cf_html_light_logo.svg" alt="The Software Launch" class="img-fluid lightLogo">
+                            <!-- Dark Logo -->
+                            <img src="assets/img/cf_html_dark_logo.svg" alt="The Software Launch" class="img-fluid darkLogo">
+                            <!--// Header \\-->
+                        </a>
+                        <!-- Header Email need to change -->
+                        <p class="mb-0 text-center text-md-left"><a href="mailto:support@yourbrand.com" class="font-weight-medium"><i class="fa fa-envelope me-2"></i>support@yourbrand.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--\\ Header //-->
+
+    <!--// Main \\-->
+    <main class="error-page pt-5">
+
+        <!--// Error Page Content Section \\-->
+        <section class="pd-80 mob-margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <div id="notfound">
+                            <div class="section-title notfound">
+                                <div class="notfound-404">
+                                    <h1>404</h1>
+                                </div>
+                                <h2 class="">We are sorry, Page not found!</h2>
+                                <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
+                                <a href="index.html">Back To Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--\\ Error Page Content Section //-->
+
+    </main>
+    <!--\\ Main //-->
+
+    <!--// Footer \\-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inner-container text-center">
+                        <!-- Footer Logo -->
+                        <figure class="mb-4">
+                            <img class="logo" src="assets/img/cf_html_light_logo.svg" alt="The Software Launch" loading="lazy">
+                        </figure>
+                        <p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla consectetur metus at scelerisque. Nam mattis felis quis sollicitudin cursus. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+                        <!-- Footer Menu -->
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                        <!-- Copyright -->
+                        <p>© Copyright <span id="copyright_year"></span> YourBrand.com-All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--\\ Footer //-->
+
+    <!-- Back to top -->
+    <!-- You do not want to use a back to top - Comment bellow line -->
+    <div class="backtotop"></div>
+    <!-- Preloader -->
+    <!-- You do not want to use a preloader - Comment bellow line -->
+    <div id="preloader"></div>
+
+    <!--// jQuery \\-->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!--\\ jQuery //-->
+    <!--// Bootstrap \\-->
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <!--\\ Bootstrap //-->
+    <!--// Main JS \\-->
+    <script src="assets/js/main.js"></script>
+    <!--\\ Main JS //-->
+    <script>
+        $(window).ready(function() {
+            $('.fixed-top.sticky .navbar-brand img').attr('src', 'assets/img/cf_html_dark_logo.svg');
+        });
+    </script>
+</body>
+
+</html>
