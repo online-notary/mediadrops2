@@ -1497,7 +1497,7 @@ footer p:last-of-type {
 ==========================================================*/
 
 .order-page .banner-section {
-    background-image: url('../img/order-banner-bg.png');
+    background-image: url('../img/order.svg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
