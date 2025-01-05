@@ -21,6 +21,35 @@
     <!--\\ Bootstrap //-->
     <!--// Stylesheet \\-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      #vimeoModal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 60%;
+        background-color: #000;
+        z-index: 1000;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      #vimeoModal iframe {
+        width: 100%;
+        height: 100%;
+      }
+      #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+      }
+    </style>
     <!--\\ Stylesheet //-->
   </head>
 
@@ -174,6 +203,9 @@
                   striking visuals are optimized for engagement, ensuring your
                   first impression makes a lasting impact.
                 </p>
+                <button class="playVideoBtn" data-video-id="1043971286">
+                  Play Video 1
+                </button>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 item-single">
@@ -582,7 +614,7 @@
                 </p>
               </div>
             </div>
-              <div class="col-md-6 col-lg-4 item-single">
+            <div class="col-md-6 col-lg-4 item-single">
               <div class="inner-container text-center">
                 <figure>
                   <img
@@ -593,11 +625,13 @@
                 </figure>
                 <h4 class="font-weight-bold">Magic Hooks</h4>
                 <p class="font-weight-medium mb-0">
-               Kickstart your content with AI-crafted introductions optimized for SEO. Attract more visitors with engaging, keyword-rich openings that boost your search engine rankings.
+                  Kickstart your content with AI-crafted introductions optimized
+                  for SEO. Attract more visitors with engaging, keyword-rich
+                  openings that boost your search engine rankings.
                 </p>
               </div>
             </div>
-              <div class="col-md-6 col-lg-4 item-single">
+            <div class="col-md-6 col-lg-4 item-single">
               <div class="inner-container text-center">
                 <figure>
                   <img
@@ -608,7 +642,10 @@
                 </figure>
                 <h4 class="font-weight-bold">Better Benefit Stacks</h4>
                 <p class="font-weight-medium mb-0">
-              Highlight your product's advantages with AI-structured benefit stacks, designed to clearly communicate value and persuade potential buyers. Transform features into benefits seamlessly to boost understanding and interest.
+                  Highlight your product's advantages with AI-structured benefit
+                  stacks, designed to clearly communicate value and persuade
+                  potential buyers. Transform features into benefits seamlessly
+                  to boost understanding and interest.
                 </p>
               </div>
             </div>
@@ -623,11 +660,14 @@
                 </figure>
                 <h4 class="font-weight-bold">Objection Crushing FAQs</h4>
                 <p class="font-weight-medium mb-0">
-             Generate informative and concise FAQs with AI, tailored to your audience's most common questions and concerns. Improve customer satisfaction and reduce support queries by providing clear, helpful answers.
+                  Generate informative and concise FAQs with AI, tailored to
+                  your audience's most common questions and concerns. Improve
+                  customer satisfaction and reduce support queries by providing
+                  clear, helpful answers.
                 </p>
               </div>
             </div>
-              <div class="col-md-6 col-lg-4 item-single">
+            <div class="col-md-6 col-lg-4 item-single">
               <div class="inner-container text-center">
                 <figure>
                   <img
@@ -638,7 +678,10 @@
                 </figure>
                 <h4 class="font-weight-bold">Objection Crushing FAQs</h4>
                 <p class="font-weight-medium mb-0">
-             Generate informative and concise FAQs with AI, tailored to your audience's most common questions and concerns. Improve customer satisfaction and reduce support queries by providing clear, helpful answers.
+                  Generate informative and concise FAQs with AI, tailored to
+                  your audience's most common questions and concerns. Improve
+                  customer satisfaction and reduce support queries by providing
+                  clear, helpful answers.
                 </p>
               </div>
             </div>
@@ -671,8 +714,8 @@
                   </h2>
                 </div>
                 <p class="fz-125 text-center text-lg-left">
-                  With countless specialized AI apps emerging daily,
-                  Media Drops software brings
+                  With countless specialized AI apps emerging daily, Media Drops
+                  software brings
                   <span class="text-underline">AI in-house</span>, providing one
                   place for all your business needs. Here's what it offers:
                 </p>
@@ -1048,7 +1091,8 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                       Why juggle multiple tools when Media Drops evolves with your business?
+                        Why juggle multiple tools when Media Drops evolves with
+                        your business?
                       </h2>
                     </div>
                     <div
@@ -1058,7 +1102,11 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        Media Drops is not static – it continuously adds and enhances apps to stay ahead of your needs. You’re investing in a platform that grows with you, eliminating the need for constant switching or searching for new tools.
+                        Media Drops is not static – it continuously adds and
+                        enhances apps to stay ahead of your needs. You’re
+                        investing in a platform that grows with you, eliminating
+                        the need for constant switching or searching for new
+                        tools.
                       </div>
                     </div>
                   </div>
@@ -1071,7 +1119,8 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        Why settle for scattered solutions when you can rely on one powerhouse platform?
+                        Why settle for scattered solutions when you can rely on
+                        one powerhouse platform?
                       </h2>
                     </div>
                     <div
@@ -1081,7 +1130,10 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                  Instead of hopping between platforms to complete tasks, Media Drops consolidates everything into one streamlined suite. It’s built to save you time, reduce complexity, and maximize productivity.
+                        Instead of hopping between platforms to complete tasks,
+                        Media Drops consolidates everything into one streamlined
+                        suite. It’s built to save you time, reduce complexity,
+                        and maximize productivity.
                       </div>
                     </div>
                   </div>
@@ -1094,7 +1146,8 @@
                         aria-expanded="false"
                         aria-controls="collapseThree"
                       >
-                        Tired of tools that don’t talk to each other? Media Drops fixes that.
+                        Tired of tools that don’t talk to each other? Media
+                        Drops fixes that.
                       </h2>
                     </div>
                     <div
@@ -1104,7 +1157,9 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                      Media Drops’ integrated suite ensures every app works together seamlessly in your Vault, delivering unified solutions that other piecemeal platforms can’t match.
+                        Media Drops’ integrated suite ensures every app works
+                        together seamlessly in your Vault, delivering unified
+                        solutions that other piecemeal platforms can’t match.
                       </div>
                     </div>
                   </div>
@@ -1117,7 +1172,8 @@
                         aria-expanded="false"
                         aria-controls="collapseFour"
                       >
-                        Say goodbye to fragmented workflows – Media Drops is all you need.
+                        Say goodbye to fragmented workflows – Media Drops is all
+                        you need.
                       </h2>
                     </div>
                     <div
@@ -1127,7 +1183,9 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                  With Media Drops, you get a growing arsenal of AI-powered apps under one roof, making it the ultimate one-stop shop for marketing and business tools.
+                        With Media Drops, you get a growing arsenal of
+                        AI-powered apps under one roof, making it the ultimate
+                        one-stop shop for marketing and business tools.
                       </div>
                     </div>
                   </div>
@@ -1140,7 +1198,8 @@
                         aria-expanded="false"
                         aria-controls="collapseFive"
                       >
-                        Why waste time adapting to other tools when Media Drops adapts to you?
+                        Why waste time adapting to other tools when Media Drops
+                        adapts to you?
                       </h2>
                     </div>
                     <div
@@ -1150,7 +1209,10 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                       Media Drops' mission is to learn about your business and offer tools tailored to your unique needs. Other platforms give you generic solutions, but Media Drops delivers purpose-built results.
+                        Media Drops' mission is to learn about your business and
+                        offer tools tailored to your unique needs. Other
+                        platforms give you generic solutions, but Media Drops
+                        delivers purpose-built results.
                       </div>
                     </div>
                   </div>
@@ -1161,6 +1223,18 @@
         </div>
       </div>
       <!--\\ FAQ Section //-->
+
+      <!--\\ Modal structure //-->
+      <div id="overlay"></div>
+      <div id="vimeoModal">
+        <iframe
+          id="vimeoPlayer"
+          src=""
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
     </main>
     <!--\\ Main //-->
     <!--// Footer \\-->
@@ -1220,11 +1294,34 @@
     <!--\\ Bootstrap //-->
     <!--// Main JS \\-->
     <script src="assets/js/main.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <!--\\ Main JS //-->
     <!-- <script>
         $(window).ready(function() {
             $('.fixed-top.sticky .navbar-brand img').attr('src', 'assets/img/cf_html_dark_logo.svg');
         });
     </script> -->
+    <script>
+      const playVideoButtons = document.querySelectorAll('.playVideoBtn');
+      const vimeoModal = document.getElementById('vimeoModal');
+      const overlay = document.getElementById('overlay');
+      const vimeoPlayer = document.getElementById('vimeoPlayer');
+
+      playVideoButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const videoId = button.getAttribute('data-video-id');
+          const vimeoVideoUrl = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+          vimeoPlayer.src = vimeoVideoUrl;
+          vimeoModal.style.display = 'block';
+          overlay.style.display = 'block';
+        });
+      });
+
+      overlay.addEventListener('click', () => {
+        vimeoPlayer.src = ''; // Stop the video
+        vimeoModal.style.display = 'none';
+        overlay.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
