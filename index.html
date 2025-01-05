@@ -22,6 +22,20 @@
     <!--// Stylesheet \\-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
+       .closeBtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            z-index: 1001;
+            background: rgba(0, 0, 0, 0.6);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+     
       #vimeoModal {
         display: none;
         position: fixed;
@@ -203,8 +217,11 @@
                   striking visuals are optimized for engagement, ensuring your
                   first impression makes a lasting impact.
                 </p>
-                <button class="playVideoBtn btn btn-orange" data-video-id="1044013665">
-                  Learn more
+                <button
+                  class="playVideoBtn btn btn-orange"
+                  data-video-id="1044013665"
+                >
+                  <span class="title">Learn more</span>
                 </button>
               </div>
             </div>
@@ -1227,6 +1244,7 @@
       <!--\\ Modal structure //-->
       <div id="overlay"></div>
       <div id="vimeoModal">
+         <button class="closeBtn" id="closeModalBtn">X</button>
         <iframe
           id="vimeoPlayer"
           src=""
@@ -1307,6 +1325,12 @@
       const overlay = document.getElementById('overlay');
       const vimeoPlayer = document.getElementById('vimeoPlayer');
 
+       function closeModal() {
+            vimeoPlayer.src = ""; // Stop the video
+            vimeoModal.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+
       playVideoButtons.forEach((button) => {
         button.addEventListener('click', () => {
           const videoId = button.getAttribute('data-video-id');
@@ -1322,6 +1346,10 @@
         vimeoModal.style.display = 'none';
         overlay.style.display = 'none';
       });
+
+
+      overlay.addEventListener('click', closeModal);
+        closeModalBtn.addEventListener('click', closeModal);
     </script>
   </body>
 </html>
